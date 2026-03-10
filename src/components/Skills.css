@@ -1,0 +1,26 @@
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  padding: 1rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-blue);
+  box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.5);
+  background: rgba(59, 130, 246, 0.1);
+  color: #fff;
+}
