@@ -9,8 +9,8 @@ const Experience = () => {
       company: "First Central Credit Bureau",
       duration: "Dec 2025 - Present",
       location: "On-Site",
-      description: "Developed and maintained responsive web applications using React.js. Collaborated with designers to implement intuitive user interfaces and improved overall site performance by 20% through code optimization.",
-      skills: ["React Native", "Expo", "Python", "Django", "Typescript"]
+      description: "Developed a file processing pipeline, reducing human error and bad data quality by 20%. ",
+      skills: ["React Native", "React", "Expo", "Python", "Django", "Typescript"]
     },
     {
       id: 2,

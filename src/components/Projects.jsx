@@ -18,8 +18,8 @@ const Projects = () => {
       title: "Kolo+ mobile app",
       desc: "Kolo+ is a savings app. It includes a feature called friend accountability that allows users let friends view their savings goals and send notifications to hold them accountable ",
       detailedDesc: "Kolo+ revolutionizes personal savings by integrating social accountability. Users can set custom savings goals and invite friends to act as accountability partners. These partners can track progress and send motivational nudges or reminders right within the app. Built completely on Firebase, Kolo+ offers real-time updates and seamless user authentication. Its beautiful, responsive interface is powered by React Native and Expo.",
-      image: "/Onboarding-1.jpeg",
-      additionalImages: ["", "", ""],
+      image: "Splash Screen.jpeg",
+      additionalImages: ["/Onboarding-1.jpeg", "/Onboarding-2.jpeg", "/Onboarding-3.jpeg"],
       tags: ["React Native", "Expo", "Reanimated", "firebase", "DEMO"],
       github: "https://github.com/MisterDada/KOLO"
     },
@@ -30,6 +30,15 @@ const Projects = () => {
       image: "",
       additionalImages: ["", "", ""],
       tags: ["NodeJs", "Express", "MongoDB", "Cloudinary", "Gemini AI", "LIVE" ],
+      github: "https://github.com/MisterDada/Local-Market-API"
+    },
+    {
+      title: "Smart File Processing Pipeline",
+      desc: "Problem: Manual file cleaning and validation created inconsistencies and slowed down internal workflows. Solution: Built a backend service using FastAPI and Python that automatically processes uploaded files, applies transformation rules, and stores clean data in a database. Architecture Client uploads file → FastAPI API → Processing engine → Local storage + Database Key Features File upload API Rule-based data cleaning Error handling and validation Automated storage and persistence",
+      detailedDesc: "The Local Market Backend is a robust API designed for modern online marketplaces. It seamlessly integrates Cloudinary for efficient image management and leverages Gemini AI to auto-generate descriptive product keywords for enhanced searchability. The system covers everything from secure user authentication via JWT, integration and unit tests to complex cart and order management, making it a reliable foundation for frontend applications.",
+      image: "",
+      additionalImages: ["", "", ""],
+      tags: ["React", "Python", "FastAPI", "LIVE" ],
       github: "https://github.com/MisterDada/Local-Market-API"
     }
   ];
