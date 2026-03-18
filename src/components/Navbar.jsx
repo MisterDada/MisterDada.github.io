@@ -15,11 +15,10 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'glass' : ''}`}>
       <div className="container nav-content">
-        <a href="#home" className="logo text-gradient">Dev Dada Portfolio</a>
+        <a href="#home" className="logo text-gradient">Dev Dada</a>
         <div className="nav-links">
-          <a href="#home" className="nav-link">Home</a>
-          <a href="#skills" className="nav-link">Skills</a>
-          <a href="#projects" className="nav-link">Projects</a>
+          <a href="#projects" className="nav-link">Apps</a>
+          <a href="#experience" className="nav-link">Experience</a>
           <a href="#contact" className="btn btn-primary btn-sm">Contact Me</a>
         </div>
       </div>

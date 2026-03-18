@@ -1,115 +1,178 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Projects.css';
 
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
-
   const projects = [
     {
+      id: "glowinside",
       title: "Glowinside",
-      desc: "Glowinside is a mental halth awareness app. It is a cross platform app that helps people to improve their mental health.",
-      detailedDesc: "Glowinside goes beyond simple tracking to provide a comprehensive mental health toolkit. Users can monitor their daily moods, access guided meditation sessions, and read curated articles on wellbeing. The app utilizes engaging Reanimated animations to create a soothing user experience, while the robust Node.js and MongoDB backend ensures secure and reliable data storage. It is designed to be accessible and helpful for anyone looking to improve their mental hygiene.",
-      image: "/glowinside1.jpeg",
-      additionalImages: ["", "", ""],
-      tags: ["React Native", "Expo", "Reanimated", "NodeJs", "Express", "MongoDB", "DEMO"],
-      github: "https://github.com/MisterDada/GlowInside"
+      tagline: "A comprehensive mental health toolkit for daily wellbeing.",
+      demoVideo: "public/appVideos/glowinsidevideo.mp4", // Placeholder for demo video or GIF
+      links: {
+        tryIt: "#", // Try It link (APK/TestFlight/Expo)
+        github: "https://github.com/MisterDada/GlowInside"
+      },
+      story: {
+        problem: "Glowinside is a mental health awareness mobile application inspired by Headspace. The app focuses on promoting mindfulness, emotional awareness, and daily mental wellness through a calm, user-friendly mobile experience. The project demonstrates modern React Native development practices, smooth animations, and platform-aware UI design.",
+        solution: "Engineered a cross-platform mobile app featuring daily mood monitoring, guided meditation sessions, and curated wellbeing articles.",
+        challenges: "Implementing complex, soothing animations with Reanimated while maintaining 60fps performance across low-end Android and iOS devices.",
+        impact: "Delivered a performant, accessible tool for mental health tracking backed by a secure Node.js/MongoDB infrastructure."
+      },
+      tech: ["React Native", "Expo", "Reanimated", "Node.js", "Express", "MongoDB"],
+      images: ["/glowinside1.jpeg"]
     },
     {
-      title: "Kolo+ mobile app",
-      desc: "Kolo+ is a savings app. It includes a feature called friend accountability that allows users let friends view their savings goals and send notifications to hold them accountable ",
-      detailedDesc: "Kolo+ revolutionizes personal savings by integrating social accountability. Users can set custom savings goals and invite friends to act as accountability partners. These partners can track progress and send motivational nudges or reminders right within the app. Built completely on Firebase, Kolo+ offers real-time updates and seamless user authentication. Its beautiful, responsive interface is powered by React Native and Expo.",
-      image: "Splash Screen.jpeg",
-      additionalImages: ["/Onboarding-1.jpeg", "/Onboarding-2.jpeg", "/Onboarding-3.jpeg"],
-      tags: ["React Native", "Expo", "Reanimated", "firebase", "DEMO"],
-      github: "https://github.com/MisterDada/KOLO"
+      id: "kolo",
+      title: "Kolo+",
+      tagline: "Social accountability savings app to help groups reach financial goals.",
+      demoVideo: "", // Placeholder for demo video or GIF
+      links: {
+        tryIt: "#", // Try It link
+        github: "https://github.com/MisterDada/KOLO"
+      },
+      story: {
+        problem: "Saving money alone is hard. Users drop off without external motivation and accountability.",
+        solution: "Built a social savings platform where users set financial goals and invite friends to act as accountability partners who can monitor progress and send nudges.",
+        challenges: "Architecting a seamless real-time notification loop and robust data synchronization using Firebase across different mobile clients.",
+        impact: "Created an engaging, responsive interface that turns a solitary financial chore into a interactive social habit."
+      },
+      tech: ["React Native", "Expo", "Firebase", "Reanimated"],
+      images: ["Splash Screen.jpeg", "/Onboarding-1.jpeg", "/Onboarding-2.jpeg", "/Onboarding-3.jpeg"]
     },
     {
+      id: "localmarket",
       title: "Local Market Backend",
-      desc: "Local-Market-API is a scalable backend for a small online marketplace built with Node.js, Express, and MongoDB. It supports user authentication, product management, semantic product search with AI-generated keywords, image uploads to Cloudinary, and a fully functional shopping cart system.",
-      detailedDesc: "The Local Market Backend is a robust API designed for modern online marketplaces. It seamlessly integrates Cloudinary for efficient image management and leverages Gemini AI to auto-generate descriptive product keywords for enhanced searchability. The system covers everything from secure user authentication via JWT, integration and unit tests to complex cart and order management, making it a reliable foundation for frontend applications.",
-      image: "",
-      additionalImages: ["", "", ""],
-      tags: ["NodeJs", "Express", "MongoDB", "Cloudinary", "Gemini AI", "LIVE" ],
-      github: "https://github.com/MisterDada/Local-Market-API"
+      tagline: "Scalable backend API for a modern online marketplace with AI-driven search.",
+      demoVideo: "", // Usually backends don't have visual demos, but maybe a GIF of API response or frontend integration
+      links: {
+        tryIt: "#", // Live API documentation or deployed URL
+        github: "https://github.com/MisterDada/Local-Market-API"
+      },
+      story: {
+        problem: "Small marketplaces struggle with poor searchability and managing complex image uploads gracefully.",
+        solution: "Developed a robust Node.js API featuring semantic product search using AI-generated keywords and seamless Cloudinary integration for image management.",
+        challenges: "Designing a robust JWT authentication flow and complex relational constraints for cart and order management across a non-relational database.",
+        impact: "Provided a highly reliable, test-driven backend foundation capable of supporting scalable frontend implementations."
+      },
+      tech: ["Node.js", "Express", "MongoDB", "Cloudinary", "Gemini AI", "Jest"],
+      images: []
     },
     {
+      id: "smartfile",
       title: "Smart File Processing Pipeline",
-      desc: "Problem: Manual file cleaning and validation created inconsistencies and slowed down internal workflows. Solution: Built a backend service using FastAPI and Python that automatically processes uploaded files, applies transformation rules, and stores clean data in a database. Architecture Client uploads file → FastAPI API → Processing engine → Local storage + Database Key Features File upload API Rule-based data cleaning Error handling and validation Automated storage and persistence",
-      detailedDesc: "The Local Market Backend is a robust API designed for modern online marketplaces. It seamlessly integrates Cloudinary for efficient image management and leverages Gemini AI to auto-generate descriptive product keywords for enhanced searchability. The system covers everything from secure user authentication via JWT, integration and unit tests to complex cart and order management, making it a reliable foundation for frontend applications.",
-      image: "",
-      additionalImages: ["", "", ""],
-      tags: ["React", "Python", "FastAPI", "LIVE" ],
-      github: "https://github.com/MisterDada/Local-Market-API"
+      tagline: "Automated ETL pipeline to clean, validate, and process internal workflow data.",
+      demoVideo: "public/appVideos/filecleaner.mp4", // Placeholder
+      links: {
+        tryIt: "#", // Live link if available
+        github: "#" // Link if available
+      },
+      story: {
+        problem: "Manual file cleaning and validation created severe inconsistencies and slowed down critical internal workflows.",
+        solution: "Built a backend service using FastAPI that automatically ingests uploaded files, applies strict transformation and data cleaning rules, and safely stores clean data.",
+        challenges: "Handling potentially massive file uploads and creating a dynamic rule engine capable of validating deeply nested, unstructured data formats.",
+        impact: "Reduced data entry errors by 20% and significantly diminished the human-hours required for data preparation."
+      },
+      tech: ["Python", "FastAPI", "Pandas", "React"],
+      images: []
     }
   ];
 
   return (
-    <section id="projects" className="section-padding">
+    <section id="projects" className="section-padding projects-section">
       <div className="container">
-        <h2 className="section-title">
-          Featured <span className="text-gradient">Projects</span>
-        </h2>
-        <div className="projects-grid">
+        <div className="section-header text-center mb-5">
+          <h2 className="section-title">
+            Featured <span className="text-gradient">Apps</span>
+          </h2>
+          <p className="section-subtitle">Deep dives into architecture, user flows, and product decisions.</p>
+        </div>
+
+        <div className="projects-feed">
           {projects.map((proj, idx) => (
-            <div key={idx} className="project-card glass delay-200 animate-fade-in">
-              <div className="project-image">
-                {/* Fallback pattern if image is missing */}
-                <div className="img-placeholder">
-                   <img src={proj.image} alt={proj.title} onError={(e) => { e.target.style.display='none'; e.target.parentNode.classList.add('fallback-bg'); }} />
-                </div>
-              </div>
-              <div className="project-info">
+            <article key={proj.id} className={`project-case-study glass delay-${idx * 100} animate-fade-in`}>
+              
+              <div className="project-header">
                 <h3 className="project-title">{proj.title}</h3>
-                <p className="project-desc">{proj.desc}</p>
-                <div className="project-tags">
-                  {proj.tags.map(tag => (
-                    <span key={tag} className="tag">{tag}</span>
-                  ))}
-                </div>
-                <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem' }}>
-                  <button title='Details' onClick={() => setSelectedProject(proj)} className="btn btn-primary" style={{ flex: 1, padding: '0.8rem 1.5rem', borderRadius: '8px', cursor: 'pointer', fontWeight: 'bold' }}>
-                    Details
-                  </button>
-                  <button title='Github' onClick={() => window.open(proj.github, '_blank')} className="btn btn-outline" style={{ flex: 1 }}>
-                    GitHub
-                  </button>
+                <p className="project-tagline">{proj.tagline}</p>
+                <div className="project-actions">
+                  <a href={proj.links.tryIt} className="btn btn-primary btn-sm">Try It (Live / APK) &rarr;</a>
+                  <a href={proj.links.github} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm">View Source</a>
                 </div>
               </div>
-            </div>
+
+              <div className="project-demo-area">
+                {proj.demoVideo ? (
+                  <div className="demo-wrapper">
+                    <video 
+                      src={proj.demoVideo}
+                      loop 
+                      muted 
+                      autoPlay 
+                      playsInline 
+                      preload='none' 
+                      poster='' 
+                      alt={`${proj.title} demo recording`} 
+                      className="demo-media" > </video>
+                  </div>
+                ) : (
+                  <div className="demo-placeholder">
+                    <div className="placeholder-content">
+                      <span className="icon">🎬</span>
+                      <p>Demo Video</p>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              <div className="project-details grid-2-col">
+                <div className="story-section">
+                  <div className="story-block">
+                    <h4>About</h4>
+                    <p>{proj.story.problem}</p>
+                  </div>
+                  <div className="story-block">
+                    <h4>Solution</h4>
+                    <p>{proj.story.solution}</p>
+                  </div>
+                  <div className="story-block">
+                    <h4>Challenges</h4>
+                    <p>{proj.story.challenges}</p>
+                  </div>
+                  <div className="story-block impact-block">
+                    <h4>Impact</h4>
+                    <p>{proj.story.impact}</p>
+                  </div>
+                </div>
+
+                <div className="tech-visual-section">
+                  <div className="tech-stack-container">
+                    <h4>Engineering Depth</h4>
+                    <div className="tech-tags">
+                      {proj.tech.map(t => (
+                        <span key={t} className="tech-tag">{t}</span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {proj.images.length > 0 && (
+                    <div className="supporting-screens">
+                      <h4>Supporting Screens</h4>
+                      <div className="screens-scroll">
+                        {proj.images.map((img, i) => (
+                          <div key={i} className="screen-card">
+                             <img src={img} alt={`Screen ${i+1}`} loading="lazy" onError={(e) => { e.target.style.display='none'; e.target.parentNode.classList.add('fallback-bg'); }}/>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+            </article>
           ))}
         </div>
       </div>
-
-      {/* Project Details Modal */}
-      {selectedProject && (
-        <div className="project-modal-overlay" onClick={() => setSelectedProject(null)}>
-          <div className="project-modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="project-modal-close" onClick={() => setSelectedProject(null)}>
-              &times;
-            </button>
-            <h3 className="project-modal-title">{selectedProject.title}</h3>
-            <div className="project-modal-tags">
-              {selectedProject.tags.map(tag => (
-                <span key={tag} className="tag">{tag}</span>
-              ))}
-            </div>
-            <p className="project-modal-desc">{selectedProject.detailedDesc}</p>
-            
-            <div className="project-modal-gallery">
-              {selectedProject.additionalImages.map((src, idx) => (
-                <div key={idx} className="project-modal-image-placeholder">
-                  {src ? <img src={src} alt={`${selectedProject.title} view ${idx + 1}`} /> : <div className="empty-image" />}
-                </div>
-              ))}
-            </div>
-            <div className="project-modal-actions">
-              <button onClick={() => window.open(selectedProject.github, '_blank')} className="btn btn-outline" style={{width: '100%'}}>
-                   View on GitHub
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 };

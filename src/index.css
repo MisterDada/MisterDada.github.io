@@ -5,15 +5,15 @@
   --text-primary: #ededed;
   --text-secondary: #a1a1aa;
 
-  --accent-blue: #3b82f6;
-  --accent-purple: #8b5cf6;
-  --accent-pink: #ec4899;
+  --accent-amber: #f59e0b;
+  --accent-orange: #f97316;
+  --accent-red: #ea580c;
 
   --gradient-glow: linear-gradient(
     130deg,
-    var(--accent-blue),
-    var(--accent-purple),
-    var(--accent-pink)
+    var(--accent-amber),
+    var(--accent-orange),
+    var(--accent-red)
   );
 
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
@@ -108,9 +108,9 @@ button {
   border-radius: inherit;
   background: linear-gradient(
     135deg,
-    var(--accent-pink),
-    var(--accent-purple),
-    var(--accent-blue)
+    var(--accent-red),
+    var(--accent-orange),
+    var(--accent-amber)
   );
   z-index: -1;
   transition: opacity 0.3s ease;
@@ -123,7 +123,7 @@ button {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px -10px var(--accent-purple);
+  box-shadow: 0 10px 20px -10px var(--accent-orange);
 }
 
 .btn-outline {

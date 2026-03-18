@@ -31,7 +31,7 @@
 }
 
 .experience-item:hover {
-  border-color: rgba(139, 92, 246, 0.4);
+  border-color: rgba(249, 115, 22, 0.4);
   transform: translateX(5px);
   background: rgba(15, 10, 31, 0.7);
 }
@@ -42,7 +42,7 @@
   height: 50px;
   border-radius: 50%;
   background: #0f0a1f;
-  border: 2px solid var(--accent-purple);
+  border: 2px solid var(--accent-orange);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,10 +86,15 @@
   color: rgba(255, 255, 255, 0.2);
 }
 
-.exp-description {
+.exp-points {
   color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 1.25rem;
+  padding-left: 1.2rem;
+}
+
+.exp-points li {
+  margin-bottom: 0.5rem;
 }
 
 .exp-skills {
@@ -103,9 +108,9 @@
   font-weight: 600;
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
-  background: rgba(139, 92, 246, 0.1);
-  color: var(--accent-purple);
-  border: 1px solid rgba(139, 92, 246, 0.2);
+  background: rgba(249, 115, 22, 0.1);
+  color: var(--accent-orange);
+  border: 1px solid rgba(249, 115, 22, 0.2);
 }
 
 @media (max-width: 768px) {
