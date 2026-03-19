@@ -1,5 +1,5 @@
-import React from 'react';
-import './Hero.css';
+import React from "react";
+import "./Hero.css";
 
 const Hero = () => {
   return (
@@ -11,14 +11,21 @@ const Hero = () => {
           <span className="text-gradient">Real User Flows</span>
         </h1>
         <p className="hero-desc delay-100 animate-fade-in">
-          Not just another app developer. I specialize in designing and engineering mid-to-large scale mobile products with complete backend integration, smooth UX, and robust architectures using React Native and Expo.
+          Not just another app developer. I specialize in designing and
+          engineering mid-to-large scale mobile products with complete backend
+          integration, smooth UX, and robust architectures using React Native
+          and Expo.
         </p>
         <div className="hero-actions delay-200 animate-fade-in">
-          <a href="#projects" className="btn btn-primary">View App Portfolio</a>
-          <a href="#contact" className="btn btn-outline">Get In Touch</a>
+          <a href="#contact" className="btn btn-primary">
+            Get In Touch
+          </a>
+          <a href="#projects" className="btn btn-outline">
+            View App Portfolio
+          </a>
         </div>
       </div>
-      
+
       {/* Decorative background blur */}
       <div className="bg-glow glow-1"></div>
       <div className="bg-glow glow-2"></div>
