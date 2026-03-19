@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Projects.css';
+import { useState } from 'react';
 
 const Projects = () => {
   const projects = [
@@ -15,7 +16,7 @@ const Projects = () => {
       story: {
         problem: "Glowinside is a mental health awareness mobile application inspired by Headspace. The app focuses on promoting mindfulness, emotional awareness, and daily mental wellness through a calm, user-friendly mobile experience. The project demonstrates modern React Native development practices, smooth animations, and platform-aware UI design.",
         solution: "Engineered a cross-platform mobile app featuring daily mood monitoring, guided meditation sessions, and curated wellbeing articles.",
-        challenges: "Implementing complex, soothing animations with Reanimated while maintaining 60fps performance across low-end Android and iOS devices.",
+        // challenges: "Implementing complex, soothing animations with Reanimated while maintaining 60fps performance across low-end Android and iOS devices.",
         impact: "Delivered a performant, accessible tool for mental health tracking backed by a secure Node.js/MongoDB infrastructure."
       },
       tech: ["React Native", "Expo", "Reanimated", "Node.js", "Express", "MongoDB"],
@@ -25,7 +26,7 @@ const Projects = () => {
       id: "kolo",
       title: "Kolo+",
       tagline: "Social accountability savings app to help groups reach financial goals.",
-      demoVideo: "", // Placeholder for demo video or GIF
+      demoVideo: "public/appVideos/Kolovideo.mp4", // Placeholder for demo video or GIF
       links: {
         tryIt: "#", // Try It link
         github: "https://github.com/MisterDada/KOLO"
@@ -43,7 +44,7 @@ const Projects = () => {
       id: "localmarket",
       title: "Local Market Backend",
       tagline: "Scalable backend API for a modern online marketplace with AI-driven search.",
-      demoVideo: "", // Usually backends don't have visual demos, but maybe a GIF of API response or frontend integration
+      demoVideo: "/appVideos/localMarket.jpg", // Usually backends don't have visual demos, but maybe a GIF of API response or frontend integration
       links: {
         tryIt: "#", // Live API documentation or deployed URL
         github: "https://github.com/MisterDada/Local-Market-API"
@@ -55,7 +56,7 @@ const Projects = () => {
         impact: "Provided a highly reliable, test-driven backend foundation capable of supporting scalable frontend implementations."
       },
       tech: ["Node.js", "Express", "MongoDB", "Cloudinary", "Gemini AI", "Jest"],
-      images: []
+      images: ["public/localMarket.jpg"]
     },
     {
       id: "smartfile",
@@ -64,7 +65,7 @@ const Projects = () => {
       demoVideo: "public/appVideos/filecleaner.mp4", // Placeholder
       links: {
         tryIt: "#", // Live link if available
-        github: "#" // Link if available
+        github: "https://github.com/MisterDada/fileProcessingPipeline" // Link if available
       },
       story: {
         problem: "Manual file cleaning and validation created severe inconsistencies and slowed down critical internal workflows.",
@@ -76,6 +77,9 @@ const Projects = () => {
       images: []
     }
   ];
+
+
+
 
   return (
     <section id="projects" className="section-padding projects-section">
@@ -95,7 +99,7 @@ const Projects = () => {
                 <h3 className="project-title">{proj.title}</h3>
                 <p className="project-tagline">{proj.tagline}</p>
                 <div className="project-actions">
-                  <a href={proj.links.tryIt} className="btn btn-primary btn-sm">Try It (Live / APK) &rarr;</a>
+                  
                   <a href={proj.links.github} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm">View Source</a>
                 </div>
               </div>
@@ -157,7 +161,7 @@ const Projects = () => {
                   {proj.images.length > 0 && (
                     <div className="supporting-screens">
                       <h4>Supporting Screens</h4>
-                      <div className="screens-scroll">
+                      <div className='screens-scroll' >
                         {proj.images.map((img, i) => (
                           <div key={i} className="screen-card">
                              <img src={img} alt={`Screen ${i+1}`} loading="lazy" onError={(e) => { e.target.style.display='none'; e.target.parentNode.classList.add('fallback-bg'); }}/>

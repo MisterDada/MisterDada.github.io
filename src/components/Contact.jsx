@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="social-links">
             <a href="https://github.com/MisterDada" className="social-link" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://www.linkedin.com/in/dada-obafemi-0b8a7b262" className="social-link" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="/Dada_Obafemi_Resume.pdf" className="social-link" target="_blank" rel="noreferrer">Resume</a>
+            {/* <a href="/Dada_Obafemi_Resume.pdf" className="social-link" target="_blank" rel="noreferrer">Resume</a> */}
           </div>
         </div>
       </div>
