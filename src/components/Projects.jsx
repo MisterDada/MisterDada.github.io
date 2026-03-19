@@ -8,7 +8,7 @@ const Projects = () => {
       id: "glowinside",
       title: "Glowinside",
       tagline: "A comprehensive mental health toolkit for daily wellbeing.",
-      demoVideo: "public/appVideos/glowinsidevideo.mp4", // Placeholder for demo video or GIF
+      demoVideo: "/appVideos/glowinsidevideo.mp4", // Placeholder for demo video or GIF
       links: {
         tryIt: "#", // Try It link (APK/TestFlight/Expo)
         github: "https://github.com/MisterDada/GlowInside"
@@ -26,7 +26,7 @@ const Projects = () => {
       id: "kolo",
       title: "Kolo+",
       tagline: "Social accountability savings app to help groups reach financial goals.",
-      demoVideo: "public/appVideos/Kolovideo.mp4", // Placeholder for demo video or GIF
+      demoVideo: "/appVideos/Kolovideo.mp4", // Placeholder for demo video or GIF
       links: {
         tryIt: "#", // Try It link
         github: "https://github.com/MisterDada/KOLO"
@@ -56,13 +56,13 @@ const Projects = () => {
         impact: "Provided a highly reliable, test-driven backend foundation capable of supporting scalable frontend implementations."
       },
       tech: ["Node.js", "Express", "MongoDB", "Cloudinary", "Gemini AI", "Jest"],
-      images: ["public/localMarket.jpg"]
+      images: ["/localMarket.jpg"]
     },
     {
       id: "smartfile",
       title: "Smart File Processing Pipeline",
       tagline: "Automated ETL pipeline to clean, validate, and process internal workflow data.",
-      demoVideo: "public/appVideos/filecleaner.mp4", // Placeholder
+      demoVideo: "/appVideos/filecleaner.mp4", // Placeholder
       links: {
         tryIt: "#", // Live link if available
         github: "https://github.com/MisterDada/fileProcessingPipeline" // Link if available
